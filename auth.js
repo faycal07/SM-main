@@ -4,9 +4,7 @@ const bcrypt = require("bcrypt");
 const SALT_ROUNDS = 10; // Number of salt rounds for hashing
 
 require('dotenv').config();
-// require('dotenv').config(); // Load environment variables from .env
 
-// Ensure SECRET_KEY is fetched properly
 const SECRET_KEY = process.env.SECRET_KEY;   
 
 function registerUser({ name, username, password }) {
